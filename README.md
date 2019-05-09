@@ -1,29 +1,31 @@
 # vue-devtools-issue-961
 
-## Project setup
-```
-pnpm install
+Repository for https://github.com/vuejs/vue-devtools/issues/961
+
+## Steps to reproduce
+
+1. Clone this repository
+
+```console
+$ git clone https://github.com/Kogia-sima/vue-devtools-issue-961 && cd vue-devtools-issue-961
 ```
 
-### Compiles and hot-reloads for development
-```
-pnpm run serve
+1. Install dependent packages
+
+```console
+$ yarn install
 ```
 
-### Compiles and minifies for production
-```
-pnpm run build
+2. Launch the development server
+
+```console
+$ yarn run serve
 ```
 
-### Run your tests
-```
-pnpm run test
-```
+3. Open `http://localhost:8080` in your browser
 
-### Lints and fixes files
-```
-pnpm run lint
-```
+4. Open Developper tool panel, then select the Vue devtools tab.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+5. Now edit `src/App.vue`, then save it.
+
+6. Changes applied once, but no more changes will be applied until reload the page.
